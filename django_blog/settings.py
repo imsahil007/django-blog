@@ -24,8 +24,9 @@ SECRET_KEY = 'lfu_@n-ll+pntdefo&1czhefg^$#*0ms(8@e#ets8p6m_0g1d6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://djangoblogappyoutube.herokuapp.com/']
 
 
 # Application definition
@@ -137,8 +138,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'drsahil69sih@gmail.com'
+EMAIL_HOST_USER =os.environ.get('EMAIL')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
-EMAIL_HOST_PASSWORD = 'erwucbqgrwgwbbcm'
+EMAIL_HOST_PASSWORD =  os.environ.get('EMAIL_PASS')
 
