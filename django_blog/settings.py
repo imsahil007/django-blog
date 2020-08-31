@@ -24,8 +24,6 @@ SECRET_KEY = 'lfu_@n-ll+pntdefo&1czhefg^$#*0ms(8@e#ets8p6m_0g1d6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-DEBUG = True
-
 ALLOWED_HOSTS = ['https://djangoblogappyoutube.herokuapp.com/']
 
 
